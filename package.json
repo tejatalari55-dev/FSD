@@ -1,0 +1,16 @@
+{
+  "name": "interest-calculator-microservices",
+  "version": "1.0.0",
+  "description": "Microservices for simple and compound interest calculation",
+  "scripts": {
+    "start": "concurrently \"npm run start-simple\" \"npm run start-compound\" \"npm run start-gateway\" \"npm run start-frontend\"",
+    "start-simple": "cd simple-interest-service && npm start",
+    "start-compound": "cd compound-interest-service && npm start",
+    "start-gateway": "cd api-gateway && npm start",
+    "start-frontend": "cd frontend && npm run dev",
+    "install-all": "npm install && cd simple-interest-service && npm install && cd ../compound-interest-service && npm install && cd ../api-gateway && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

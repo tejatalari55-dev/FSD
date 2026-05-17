@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruity Delight - The Most Fun Fruit Store!</title>
+    <!-- Playful Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <div class="bg-decorations" id="bg-decorations">
+        <!-- Floating fruits will be added here by JS -->
+    </div>
+
+    <header class="main-header glass">
+        <div class="logo">
+            <span class="logo-icon bounce-animation">🍎</span>
+            <h1>FruityDelight</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Fruits</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" class="icon-btn theme-toggle" title="Toggle Day/Night Mode">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+            <div class="cart-summary glass" id="cart-summary-btn">
+                <span class="cart-icon">🛒</span>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="wobble-text">Yummy Freshness! 🌈</h2>
+                <p>Pick your favorite colorful fruits and let's have a party!</p>
+                <button class="cta-button pulse-animation">Let's Shop!</button>
+            </div>
+        </section>
+
+        <section id="products" class="product-section">
+            <div class="controls-container glass">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search for a fruit...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="filter-categories" id="filter-categories">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Tropical">Tropical 🏝️</button>
+                    <button class="filter-btn" data-category="Citrus">Citrus 🍋</button>
+                    <button class="filter-btn" data-category="Berries">Berries 🍓</button>
+                    <button class="filter-btn" data-category="Other">Other 🍎</button>
+                </div>
+            </div>
+
+            <h2 class="section-title">Our Rainbow Collection</h2>
+            <div id="product-grid" class="product-grid">
+                <!-- Products will be injected here by app.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer glass">
+        <div class="drawer-header">
+            <h3>Your Fruity Bag 🛍️</h3>
+            <button id="close-drawer" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items-container" class="cart-items-list">
+            <!-- Cart items will be injected here -->
+            <div class="empty-cart-msg">Your bag is empty! Fill it with colors! 🌈</div>
+        </div>
+        <div class="drawer-footer">
+            <div class="total-section">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout Now! 🚀</button>
+        </div>
+    </div>
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content glass">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <div id="modal-body" class="modal-inner">
+                <!-- Modal content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 FruityDelight. Stay Fresh & Playful! 🍍✨</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

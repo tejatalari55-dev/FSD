@@ -1,0 +1,14 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Project Kickoff",
+      "date": "2026-04-25",
+      "time": "10:00",
+      "description": "Initial meeting for the calendar project",
+      "color": "#4f46e5"
+    }
+  ],
+  "todos": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

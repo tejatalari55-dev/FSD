@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Explore Your Next Favorite Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav" class="nav">
+        <div class="nav_left">
+            <h1 class="nav_logo_text">CINE<span>STREAM</span></h1>
+            <ul class="nav_links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Indian</a></li>
+                <li><a href="#">Superheroes</a></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <button class="nav_search"><img src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png" alt="Search"></button>
+            <button class="nav_user"><img src="https://img.icons8.com/ios-filled/50/ffffff/user-male-circle.png" alt="User"></button>
+        </div>
+    </nav>
+
+    <header id="banner" class="banner">
+        <div class="banner_contents">
+            <h1 id="banner_title" class="banner_title">Movie Title</h1>
+            <div class="banner_buttons">
+                <button class="banner_button banner_button_play">Play Now</button>
+                <button class="banner_button banner_button_more">My List</button>
+            </div>
+            <p id="banner_description" class="banner_description">
+                Movie description goes here...
+            </p>
+        </div>
+        <div class="banner_fadeBottom"></div>
+    </header>
+
+    <main id="rows_container">
+        <!-- Movie rows will be dynamically injected here -->
+    </main>
+
+    <footer class="footer">
+        <div class="footer_links">
+            <a href="#">Terms and Privacy Notice</a>
+            <a href="#">Send us feedback</a>
+            <a href="#">Help</a>
+        </div>
+        <p>&copy; 2024 CineStream. Your premium movie destination.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
